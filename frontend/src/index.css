@@ -1,0 +1,185 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for buttons */
+.custom-button {
+    @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
+    transition: background-color 0.3s;
+}
+
+.custom-button:hover {
+    @apply bg-blue-600;
+}
+
+/* Custom styles for headings */
+.custom-heading {
+    @apply text-2xl font-semibold text-gray-800 dark:text-gray-100;
+}
+
+/* Custom styles for forms */
+.custom-form {
+    @apply bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md;
+}
+
+.custom-form input {
+    @apply w-full px-3 py-2 border rounded mb-4;
+    border-color: #ddd;
+}
+
+.custom-form input:focus {
+    outline: none;
+    border-color: #3182ce;
+    box-shadow: 0 0 0 1px #3182ce;
+}
+
+/* Custom styles for CustomAlerts Component */
+.crypto-combobox,
+.price-input,
+.create-alert-button {
+    padding: 8px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.create-alert-button {
+    background-color: #4CAF50;
+    /* Green background */
+    color: white;
+    cursor: pointer;
+}
+
+.create-alert-button:hover {
+    background-color: #45a049;
+    /* Darker green */
+}
+
+.price-input {
+    width: 200px;
+    /* Set a specific width for input */
+}
+
+/* Loader CSS */
+.loader {
+    border-top-color: #3498db;
+    -webkit-animation: spin 1s ease-in-out infinite;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes gradient-move {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.animate-gradient-move {
+    background-size: 200% 200%;
+    animation: gradient-move 10s ease infinite;
+}
+
+@keyframes float1 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    25% {
+        transform: translate(-10px, -30px);
+    }
+
+    50% {
+        transform: translate(10px, 20px);
+    }
+
+    75% {
+        transform: translate(-5px, -15px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes float2 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    25% {
+        transform: translate(10px, 25px);
+    }
+
+    50% {
+        transform: translate(-15px, -20px);
+    }
+
+    75% {
+        transform: translate(5px, 15px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes float3 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    25% {
+        transform: translate(-15px, -20px);
+    }
+
+    50% {
+        transform: translate(15px, 25px);
+    }
+
+    75% {
+        transform: translate(-10px, -15px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.animate-float-1 {
+    animation: float1 4s ease-in-out infinite;
+}
+
+.animate-float-2 {
+    animation: float2 5s ease-in-out infinite;
+}
+
+.animate-float-3 {
+    animation: float3 4.5s ease-in-out infinite;
+}

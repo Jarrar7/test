@@ -1,0 +1,11 @@
+{
+    "name": "cryptoproject",
+    "private": true,
+    "scripts": {
+        "build": "npm run build --prefix frontend",
+        "start": "node backend/src/server.js"
+    },
+    "dependencies": {
+        "concurrently": "^6.2.1"
+    }
+}
