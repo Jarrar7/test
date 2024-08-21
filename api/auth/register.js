@@ -1,4 +1,4 @@
-import { register } from '../src/controllers/authController';
+import { register } from '../../backend/src/controllers/authController';
 
 export default function handler(req, res) {
 
