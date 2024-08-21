@@ -25,7 +25,7 @@ const Login = () => {
         e.preventDefault(); // Prevent default form submission behavior
         try {
             // Send a login request to the server
-            const response = await fetch(`${API_URL}/api/auth/login`, {
+            const response = await fetch(`../api/auth/login`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json', // Specify the content type as JSON
